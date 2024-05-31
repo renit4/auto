@@ -26,15 +26,45 @@
             <table border="3" align="center" cellpadding="50" class="table table-bordered w-50">
                 <tr>
                     <td>Fecha de Ingreso:</td>
-                    <td><input type="date"></td>
+                    <td><input type="date" name="fing" id="fing"></td>
                 </tr>
                 <tr>
                     <td>Fecha de Egreso:</td>
-                    <td><input type="date"></td>
+                    <td><input type="date" name="fegre" id="fegre"></td>
                 </tr>
+                <tr>
+                    <td>Estado:</td>
+                    <td><select name="est" id="est">
+                        <option value="espera">En espera</option>
+                        <option value="revision">En revision</option>
+                        <option value="finalizado">Finalizado</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Cambio de Filtro:</td>
+                    <td><input type="number" min="1" name="cfiltro" id="cfiltro"></td>
+                </tr>
+                <tr>
+                    <td>Cambio de Aceite:</td>
+                    <td><input type="number" min="1" name="caceite" id="caceite"></td>
+                </tr>
+                <tr>
+                    <td>Cambio de Freno:</td>
+                    <td><input type="number" min="1" name="cfreno" id="cfreno"></td>
+                </tr>
+                <tr>
+                    <td>Descripcion:</td>
+                    <td><textarea name="desc" id="desc" ></textarea></td>
+                </tr>
+                <tr>
+                    <td>Codigo de Auto:</td>
+                    <td><input type="number" min="0" name="cauto" id="cauto"></td>
+                </tr>
+                <tr><td colspan="2"><center><button type="submit">Enviar</button></center></td></tr>
             </table>
         </form>
-
+        <br>
+        <br>
     
 </body>
 </html>
