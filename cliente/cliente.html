@@ -23,10 +23,22 @@
 <br>
     <form action="proc_reg_cli.php" method="post">
         <table  border="3" align="center" cellpadding="50" class="table table-bordered w-50">
-
+            <tr>
+                <td><input type="text" placeholder="nomyape" id="nom" name="nom"></td>
+                <td><input type="text" placeholder="direccion" id="dire" name="dire"></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="ciudad" id="ciudad" name="ciudad"></td>
+                <td><input type="number" placeholder="telefono" min="0" id="tel" name="tel"></td>
+            </tr>
+            <tr>
+                <td>fecha de alta</td>
+                <td><input type="date" name="fecha" id="fecha"></td> 
+            </tr>
+            <tr><td colspan="2"><center><button type="submit">Enviar</button></center></td></tr>
         </table>
     </form>
-
+    
 
 </body>
 </html>
