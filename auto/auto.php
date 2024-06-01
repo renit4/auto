@@ -17,6 +17,13 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
     ></script>
+    <?php
+        include("../conexion.php");
+        $sql= "SELECT C.cod_cliente, C.nomyape
+                From cliente C";
+        $res = mysqli_query($con,$sql);
+
+    ?>
     <h1><center>Registrar auto</center></h1>
     <center><a href="../index.html">Volver</a></center>
     <br>
@@ -42,9 +49,12 @@
             </tr>
             <tr>
                 <td>cod cliente:</td>
-                <td><input type="number" min="0" id="cod" name="cod"></td>
+                <td><select name="cod" id="cod">
+                <?php while($vec=mysqli_fetch_array($res)){
+                    echo "<option value='$vec[0]'>$vec[1]</option>";   
+                }?>
+                </select></td>
             </tr>
-        
             <tr> <td colspan="2"><center><button type="submit" >Enviar</button></center></td></tr>
         </table>
     </form>
