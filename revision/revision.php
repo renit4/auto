@@ -18,6 +18,12 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"
         ></script>
+        <?php
+        include("../conexion.php");
+        $sql = "SELECT A.cod_auto, A.marca, A.modelo, A.color
+                FROM auto A";
+        $res = mysqli_query($con,$sql);
+        ?>
         <h1><center>Registro de revision</center></h1>
         <center><a href="../index.html">Volver</a></center>
         <br>
@@ -58,7 +64,10 @@
                 </tr>
                 <tr>
                     <td>Codigo de Auto:</td>
-                    <td><input type="number" min="0" name="cauto" id="cauto"></td>
+                    <td><select name="cauto" id="cauto"> 
+                    <?php while($vec = mysqli_fetch_array($res)){
+                        echo "<option value='$vec[0]'>$vec[1]-$vec[2]-$vec[3]</option>";
+                    }?></select></td>
                 </tr>
                 <tr><td colspan="2"><center><button type="submit">Enviar</button></center></td></tr>
             </table>
