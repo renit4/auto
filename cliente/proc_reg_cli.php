@@ -8,7 +8,7 @@
     $fecha = $_POST["fecha"];
 
     $sql = "INSERT INTO `cliente`(`nomyape`, `direccion`, `ciudad`, `telefono`, `falta`) 
-            VALUES ('$nom','$dire','$ciudad',$tel,$fecha)";
+            VALUES ('$nom','$dire','$ciudad',$tel,'$fecha')";
     $res = mysqli_query($con,$sql);
     if($res==true){
         echo "
