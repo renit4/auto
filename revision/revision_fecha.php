@@ -18,7 +18,7 @@
     crossorigin="anonymous"
     ></script>
     <h1><center>Registro de revision</center></h1>
-        <center><a href="../index.html">Volver</a></center>
+        <center><a href="../menu.html">Volver</a></center>
         <br>
         <br>
     <form action="" method="post">

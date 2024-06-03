@@ -25,7 +25,7 @@
         if($res == true){
         ?> 
         <h1><center>Listado de Clientes</center></h1>
-        <center><a href="../index.html">Menu</a></center>
+        <center><a href="../menu.html">Menu</a></center>
         <br><br>
         <table  border="3" align="center" cellpadding="50" class="table table-bordered w-90">
             <tr>
@@ -44,7 +44,7 @@
                 echo "<td>$vec[3]</td>";
                 echo "<td>$vec[4]</td>";
                 echo "<td>$vec[5]</td>";
-                echo "<td> <a href=''>modificar</a> </td>";
+                echo "<td> <a href='mod_cliente.php?idc=$vec[0]'>modificar</a> </td>";
                 echo "<td> <a href=''>eliminar</a> </td>";
             echo "</tr> ";
         } echo "</table>";

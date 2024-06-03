@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Inicio de Sesion</title>
     <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -11,96 +11,28 @@
     crossorigin="anonymous"
     />
 </head>
-<body class="p-3 text-primary-emphasis bg-warning-subtle border-warning-subtle ">
+<body class="p-3 text-primary-emphasis bg-warning-subtle border-primary-subtle ">
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
     ></script>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="sesion/sesion.html">Inicio sesion</a>
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                    Cliente
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="cliente/cliente.html">Registrar</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                    <a class="dropdown-item" href="cliente/listar_cliente.php">Listar</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="">algo mas</a></li>
-                </ul>
-                </li>
+    <h1><center>Inicio de Sesion</center></h1>
+    <br>
+    <br>
+    <form action="sesion/proc_iniciar_sesion.php" method="post">
+        <table  border="3" align="center" cellpadding="30" class="table table-bordered w-50">
+            <tr>
+                <td><center>Ingrese su usuario:   <input type="text" name="user" id="user" placeholder="user"></center></td>
+            </tr>
+            <tr>
+                <td><center>Ingrese su contraseña: <input type="password" name="pass" id="pass" placeholder="password"></center></td>
+            </tr>
+            <tr><td><center><button type="submit">Iniciar sesion</button></center></td></tr>
+            <tr><td><center>No estas registrado? <a href="sesion/registrar_user.html"> Click aqui</a></center></td></tr>
+        </table>
+    </form>
     
-                <li class="nav-item dropdown">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                    Auto
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="auto/auto.php">Registrar</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                    <a class="dropdown-item" href="auto/listado_auto.php">Listar</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="">algo mas</a></li>
-                </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                    >
-                        Revisiones
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="revision/revision.php">Registrar</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                        <a class="dropdown-item" href="revision/listar_revision.php">listar</a>
-                        </li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="revision/revision_fecha.php">algo mas</a></li>
-                    </ul>
-                    </li>
-            </div>
-        </div>
-        </nav>
-        <br>
-        <div class="titulo"><h1><center>Menu de concesionaria</center></h1></div>
-
 
 </body>
 </html>

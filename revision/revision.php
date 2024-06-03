@@ -25,7 +25,7 @@
         $res = mysqli_query($con,$sql);
         ?>
         <h1><center>Registro de revision</center></h1>
-        <center><a href="../index.html">Volver</a></center>
+        <center><a href="../menu.html">Volver</a></center>
         <br>
         <br>
         <form action="proc_reg.php" method="post">

@@ -27,7 +27,7 @@
     ?> 
 
     <h1><center>Autos registrados</center></h1>
-    <center><a href="../index.html">Menu</a></center>
+    <center><a href="../menu.html">Menu</a></center>
     <br>
     <br>
     <table  border="3" align="center" cellpadding="50" class="table table-bordered w-50">

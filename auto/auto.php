@@ -25,7 +25,7 @@
 
     ?>
     <h1><center>Registrar auto</center></h1>
-    <center><a href="../index.html">Volver</a></center>
+    <center><a href="../menu.html">Volver</a></center>
     <br>
     <br>
     <form action="reg_auto.php" method="post">

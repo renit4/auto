@@ -27,7 +27,7 @@
         $res = mysqli_query($con,$sql);
 ?>
     <h1><center>Modifica el Auto</center></h1>
-    <center><a href="../index.html">Menu</a></center>
+    <center><a href="../menu.html">Menu</a></center>
     <br>
     <br>
     <form action="proc_mod_auto.php" method="post">
