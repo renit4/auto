@@ -22,6 +22,14 @@
 
     $id = $_GET["idr"];
     echo "$id";
+    
+    $sql = "SELECT R.*, A.cod_auto, A.marca, A.modelo
+            FROM revision R, auto A
+            WHERE `cod_revision` ='$id' 
+            AND R.cod_auto = A.cod_auto";
+    $res = mysqli_query($con,$sql);
+    $vec = mysqli_fetch_array($res);
+
 ?>
     <h1><center>Modificacion de revision</center></h1>
     <center><a href="../menu.html">Menu</a></center>
@@ -29,27 +37,51 @@
     <form action="proc_mod_rev.php" method="post">
         <table border="3" align="center" cellpadding="70" class="table table-bordered w-50">
             <tr>
-                <td></td>
-                <td></td>
+                <td>codigo de revision: </td>
+                <td><input type="text" value="<?php echo "$vec[0]"; ?>" id="id" name="id" readonly></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>Fecha de ingreso: </td>
+                <td><input type="date" id="fi" name="fi" value="<?php echo "$vec[1]"; ?>"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>Fecha de egreso: </td>
+                <td><input type="date" id="fe" name="fe" value="<?php echo "$vec[2]"; ?>"></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>estado: </td>
+                <td><select name="est" id="est" >
+                        <option value="espera">En espera</option>
+                        <option value="revision">En revision</option>
+                        <option value="finalizado">Finalizado</option>
+                </select></td>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
+                <td>cambio de filtro:</td>
+                <td><input type="text" id="filtro" name="filtro" value="<?php echo "$vec[4]"; ?>"></td>
+            </tr>
+            <tr>
+                <td>cambio de aceite:</td>
+                <td><input type="text" id="aceite" name="aceite" value="<?php echo "$vec[5]"; ?>"></td>
+            </tr>
+            <tr>
+                <td>cambio de frenos:</td>
+                <td><input type="text" id="frenos" name="frenos" value="<?php echo "$vec[6]"; ?>"></td>
+            </tr>
+            <tr>
+                <td>descripcion</td>
+                <td><input type="text" id="desc" name="desc" value="<?php echo "$vec[7]"; ?>"></td>
+            </tr>
+            <tr>
+                <td>auto: </td>
+                <td><input type="text" readonly id="auto" name="auto" value="<?php echo "$vec[10]-$vec[11]"; ?>"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><button type="submit">Enviar</button></center></td>
             </tr>
         </table>
     </form>
+    <br><br><br>
     
 </body>
 </html>
