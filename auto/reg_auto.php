@@ -15,7 +15,7 @@
         echo"
         <script>
           alert('El auto ha sido registrado correctamente! ');
-          window.location.href = '../index.html';
+          window.location.href = '../menu.html';
         </script>
         ";
       
@@ -24,7 +24,7 @@
         echo"
         <script>
           alert('Algo salio mal :( ');
-          window.location.href = '../index.html';
+          window.location.href = '../menu.html';
         </script>
         ";
     }

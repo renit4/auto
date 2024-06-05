@@ -45,7 +45,7 @@
                 echo "<td>$vec[4]</td>";
                 echo "<td>$vec[5]</td>";
                 echo "<td> <a href='mod_cliente.php?idc=$vec[0]'>modificar</a> </td>";
-                echo "<td> <a href=''>eliminar</a> </td>";
+                echo "<td> <a href='eliminar_cliente.php?idc=$vec[0]'>eliminar</a> </td>";
             echo "</tr> ";
         } echo "</table>";
         }?>

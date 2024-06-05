@@ -48,7 +48,7 @@
         echo "<td>$vec[4]</td>";
         echo "<td>$vec[7]</td>";
         echo "<td><a href='mod_auto.php?ida=$vec[0]'>modificar</a></td>";
-        echo "<td><a href=''>eliminar</a></td>";
+        echo "<td><a href='eliminar_auto.php?ida=$vec[0]'>eliminar</a></td>";
         echo "</tr>";
     }echo "</table>";
     }?>

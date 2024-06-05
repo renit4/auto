@@ -14,14 +14,14 @@
         echo "
         <script>
         alert ('salio excelente!');
-        window.location.href='../index.html';
+        window.location.href='../menu.html';
         </script>";
     }
     else{
         echo "
         <script>
         alert ('salio mal :(');
-        window.location.href='../index.html';
+        window.location.href='../menu.html';
         </script>";
     }
 ?>

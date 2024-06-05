@@ -16,12 +16,12 @@
 
     if($res==true){
         echo "<script> alert ('Ha salido excelente!');
-            window.location.href = '../index.html';
+            window.location.href = '../menu.html';
         </script>";
     }
     else{
         echo "<script> alert ('salio mal :(');
-            window.location.href = '../index.html';
+            window.location.href = '../menu.html';
         </script>";
     }
 
