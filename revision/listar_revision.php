@@ -58,8 +58,8 @@
                     echo "<td>$vec[5]</td>";
                     echo "<td>$vec[6]</td>";
                     echo "<td>$vec[7]</td>";
-                    echo "<td><a href=''>modificar</a></td> ";
-                    echo "<td><a href=''>eliminar</a></td> ";
+                    echo "<td><a href='mod_revision.php?idr=$vec[0]'>modificar</a></td> ";
+                    echo "<td><a href='eliminar_revision.php?idr=$vec[0]'>eliminar</a></td> ";
                 echo "</tr>";
                 }
             echo "</table>";
